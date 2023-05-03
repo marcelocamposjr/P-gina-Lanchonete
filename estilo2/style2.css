@@ -12,13 +12,47 @@
 
 .topo {
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
     padding: 15px 0px;
-    text-align: center;
 }
+
 
 .topo span {
     color: #3cbd87;
     font-size: 18px;
+}
+
+.topo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    border: none;
+    width: 11%;
+    font-size: 17px;
+    cursor: pointer;
+    height: 30px;
+    background-color: #3cbb86;
+    border-radius: 3px;
+}
+
+.botao::before {
+    content: " ";
+    display: inline-block;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagens/icons8-login-arredondado-à-direita-64.png);
+}
+
+.botao:hover {
+    background-color: #2ddb95;
+    text-decoration: none;
+    transition: 0.3s;
+    width: 10%;
 }
 
 .main {
@@ -30,16 +64,21 @@
 
 .container {
     max-width: 1024px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
 }
 
 .card {
     flex: 1 1 300px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 10px 1px gray;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.card:hover {
+    box-shadow: 0px 3px 7px black;
+    flex: 1 1 301px;
 }
 
 .container-imagem {
@@ -49,7 +88,7 @@
 .container-imagem img {
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .container-info {
@@ -69,6 +108,14 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #c9c4c4;
+    
+}
+
+.container-preco:hover {
+    background-color: #c9c4c4;
+    color: #00fc93;
+    cursor: pointer;
+    text-shadow: 0px 1px 1px black;
 }
 
 .container-icone {
@@ -78,4 +125,27 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-  }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    height: 40px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+    color: #3cbd87;
+}
+
+.ultimop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
